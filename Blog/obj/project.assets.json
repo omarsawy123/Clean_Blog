@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Win 7\\source\\repos\\Blog\\Blog\\Blog.csproj",
-      "projectName": "Blog",
-      "projectPath": "C:\\Users\\Win 7\\source\\repos\\Blog\\Blog\\Blog.csproj",
+      "projectUniqueName": "C:\\Users\\Win 7\\source\\repos\\Blog\\Blog\\BlogApp.csproj",
+      "projectName": "BlogApp",
+      "projectPath": "C:\\Users\\Win 7\\source\\repos\\Blog\\Blog\\BlogApp.csproj",
       "packagesPath": "C:\\Users\\Win 7\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Win 7\\source\\repos\\Blog\\Blog\\obj\\",
       "projectStyle": "PackageReference",
