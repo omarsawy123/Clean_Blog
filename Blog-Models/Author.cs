@@ -20,5 +20,6 @@ namespace Blog_Models
         [Required]
         public IEnumerable<Blog> Blogs { get; set; }
 
+
     }
 }
