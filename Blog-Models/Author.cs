@@ -18,8 +18,8 @@ namespace Blog_Models
         public Specialty Specialty { get; set; }
 
         [Required]
-        public IEnumerable<Blog> Blogs { get; set; }
+        public int Blogs { get; set; }
 
-
+        
     }
 }
