@@ -26,6 +26,7 @@ namespace Blog_API.Models
             modelBuilder.Entity<Author>().HasData(
                 new Author
                 {
+                    Id=1,
                     Name = "Sam",
                     Specialty = Specialty.Hardware,
                     Blogs=2
@@ -33,6 +34,7 @@ namespace Blog_API.Models
             modelBuilder.Entity<Author>().HasData(
                new Author
                {
+                   Id = 2,
                    Name = "John",
                    Specialty = Specialty.Software,
                    Blogs = 2
@@ -40,6 +42,7 @@ namespace Blog_API.Models
             modelBuilder.Entity<Author>().HasData(
                new Author
                {
+                   Id = 3,
                    Name = "Mary",
                    Specialty = Specialty.Technology,
                    Blogs = 2
@@ -50,6 +53,7 @@ namespace Blog_API.Models
             modelBuilder.Entity<Blog>().HasData(
                 new Blog
                 {
+                    Id = 1,
                     Title = "First Blog",
                     AuthorId = 1,
                     Content = "First Content",
@@ -58,6 +62,7 @@ namespace Blog_API.Models
             modelBuilder.Entity<Blog>().HasData(
                 new Blog
                 {
+                    Id = 2,
                     Title = "Second Blog",
                     AuthorId = 2,
                     Content = "Second Content",
@@ -67,6 +72,7 @@ namespace Blog_API.Models
             modelBuilder.Entity<Blog>().HasData(
                 new Blog
                 {
+                    Id = 3,
                     Title = "Third Blog",
                     AuthorId = 3,
                     Content = "Third Content",

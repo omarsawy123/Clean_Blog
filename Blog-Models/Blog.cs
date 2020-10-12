@@ -12,7 +12,7 @@ namespace Blog_Models
         public string Title { get; set; }
 
         [Required]
-        public Author Author { get; set; }
+        public int AuthorId { get; set; }
         
         [Required]
         public DateTime DatePublished { get; set; }
