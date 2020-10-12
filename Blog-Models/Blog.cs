@@ -9,7 +9,7 @@ namespace Blog_Models
 
         [Required]
         [MinLength(5)]
-        public string Name { get; set; }
+        public string Title { get; set; }
 
         [Required]
         public Author Author { get; set; }
