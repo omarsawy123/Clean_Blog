@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blog_API.Models
 {
-    interface IBlogRepository
+    public interface IBlogRepository
     {
         Task<IEnumerable<Blog>> GetBlogs();
         Task <Blog> GetBlog(int blogId);

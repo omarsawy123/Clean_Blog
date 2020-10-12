@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blog_API.Models
 {
-    interface IAuthorRepository
+    public interface IAuthorRepository
     {
         Task<Author> GetAuthor(int authorId);
 
