@@ -26,26 +26,23 @@ namespace Blog_API.Models
             modelBuilder.Entity<Author>().HasData(
                 new Author
                 {
-                    Id=1,
+                    Id="1",
                     Name = "Sam",
-                    Specialty = Specialty.Hardware,
-                    Blogs=2
+                   
                 });
             modelBuilder.Entity<Author>().HasData(
                new Author
                {
-                   Id = 2,
+                   Id = "2",
                    Name = "John",
-                   Specialty = Specialty.Software,
-                   Blogs = 2
+                  
                });
             modelBuilder.Entity<Author>().HasData(
                new Author
                {
-                   Id = 3,
+                   Id = "3",
                    Name = "Mary",
-                   Specialty = Specialty.Technology,
-                   Blogs = 2
+                  
                });
 
             //Seed Blog Data
@@ -53,30 +50,30 @@ namespace Blog_API.Models
             modelBuilder.Entity<Blog>().HasData(
                 new Blog
                 {
-                    Id = 1,
-                    Title = "First Blog",
+                    Id = "1",
+                    Name = "First Blog",
                     AuthorId = 1,
                     Content = "First Content",
-                    DatePublished = new DateTime(2020, 10, 12)
+                   
                 });
             modelBuilder.Entity<Blog>().HasData(
                 new Blog
                 {
-                    Id = 2,
-                    Title = "Second Blog",
+                    Id = "2",
+                    Name = "Second Blog",
                     AuthorId = 2,
                     Content = "Second Content",
-                    DatePublished = new DateTime(2020, 10, 13)
+                   
                 });
 
             modelBuilder.Entity<Blog>().HasData(
                 new Blog
                 {
-                    Id = 3,
-                    Title = "Third Blog",
+                    Id = "3",
+                    Name = "Third Blog",
                     AuthorId = 3,
                     Content = "Third Content",
-                    DatePublished = new DateTime(2020, 10, 14)
+                   
                 });
         }
 

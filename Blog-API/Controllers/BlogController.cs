@@ -35,7 +35,7 @@ namespace Blog_API.Controllers
             }
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{blogId:int}")]
         public async Task<ActionResult<Blog>> GetBlog(int blogId)
         {
             try

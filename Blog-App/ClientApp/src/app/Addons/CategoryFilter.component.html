@@ -1,0 +1,9 @@
+<span class="radioClass mr-2">Show:</span>
+<input type="radio" name="options" value="All" [(ngModel)]="currentSelectedOption" (change)="OnOptionChanged()"  />
+<span class="radioClass">All ({{All}})</span>
+<input type="radio" name="options" value="Technology" [(ngModel)]="currentSelectedOption" (change)="OnOptionChanged()"  />
+<span class="radioClass">Technology ({{Technology}})</span>
+<input type="radio" name="options" value="Software"  [(ngModel)]="currentSelectedOption" (change)="OnOptionChanged()" />
+<span class="radioClass">Software ({{Software}})</span>
+<input type="radio" name="options" value="Hardware" [(ngModel)]="currentSelectedOption" (change)="OnOptionChanged()" />
+<span class="radioClass">Hardware ({{Hardware}})</span>

@@ -1,0 +1,149 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <RootNamespace>Blog_App</RootNamespace>
+    <UserSecretsId>3e662b76-fa7a-4a99-9773-1dc3c5066f9e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\clean-blog.css" />
+    <None Include="wwwroot\css\clean-blog.min.css" />
+    <None Include="wwwroot\img\about-bg.jpg" />
+    <None Include="wwwroot\img\contact-bg.jpg" />
+    <None Include="wwwroot\img\home-bg.jpg" />
+    <None Include="wwwroot\img\post-bg.jpg" />
+    <None Include="wwwroot\img\post-sample-image.jpg" />
+    <None Include="wwwroot\js\clean-blog.js" />
+    <None Include="wwwroot\js\clean-blog.min.js" />
+    <None Include="wwwroot\js\contact_me.js" />
+    <None Include="wwwroot\js\jqBootstrapValidation.js" />
+    <None Include="wwwroot\mail\contact_me.php" />
+    <None Include="wwwroot\scss\clean-blog.scss" />
+    <None Include="wwwroot\scss\_bootstrap-overrides.scss" />
+    <None Include="wwwroot\scss\_contact.scss" />
+    <None Include="wwwroot\scss\_footer.scss" />
+    <None Include="wwwroot\scss\_global.scss" />
+    <None Include="wwwroot\scss\_masthead.scss" />
+    <None Include="wwwroot\scss\_mixins.scss" />
+    <None Include="wwwroot\scss\_navbar.scss" />
+    <None Include="wwwroot\scss\_post.scss" />
+    <None Include="wwwroot\scss\_variables.scss" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\all.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\all.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\brands.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\brands.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\fontawesome.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\fontawesome.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\regular.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\regular.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\solid.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\solid.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\svg-with-js.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\v4-shims.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\v4-shims.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\vendor\jquery\jquery.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.min.map" />
+    <None Include="wwwroot\vendor\jquery\jquery.slim.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.slim.min.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.slim.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blog-Models\Blog-Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\Error\" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+  
+</Project>

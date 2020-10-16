@@ -5,21 +5,23 @@ namespace Blog_Models
 {
     public class Blog
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [Required]
         [MinLength(5)]
-        public string Title { get; set; }
+        public string Name { get; set; }
 
-        [Required]
-        public int AuthorId { get; set; }
         
-        [Required]
-        public DateTime DatePublished { get; set; }
+        public string AuthorId { get; set; }
+        
+        
+        public string DatePublished { get; set; }
         
         [Required]
         public string Content { get; set; }
-       
+        
+        [Required]
 
+        public string Category { get; set; }
     }
 }

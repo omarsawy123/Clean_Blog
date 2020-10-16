@@ -34,6 +34,8 @@ namespace Blog_API
             opt.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
 
             services.AddScoped<IBlogRepository,BlogRepository>();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

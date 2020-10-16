@@ -8,17 +8,12 @@ namespace Blog_Models
     public class Author
     {
         
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [Required]
         [MinLength(2)]
         public string Name { get; set; }
 
-        [Required]
-        public Specialty Specialty { get; set; }
-
-        [Required]
-        public int Blogs { get; set; }
 
         
     }
