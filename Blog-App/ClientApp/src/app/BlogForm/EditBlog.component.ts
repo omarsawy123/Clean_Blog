@@ -47,9 +47,11 @@ export class EditBlogComponent implements OnInit {
 
 
 
-      this._router.navigate(["/blog"]);
+      this._router.navigate(["/blog"]).then(() => {
+        window.location.reload();
+      });
 
-      window.location.reload();
+     
       
 
     }
@@ -64,9 +66,9 @@ export class EditBlogComponent implements OnInit {
 
       
 
-      this._router.navigate(["/blog"]);
-
-      window.location.reload();
+      this._router.navigate(["/blog"]).then(() => {
+        window.location.reload();
+      });
 
 
     }

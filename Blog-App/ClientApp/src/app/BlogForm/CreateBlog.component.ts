@@ -61,13 +61,9 @@ export class CreateBlogComponent implements OnInit {
 
       this._blogservice.postBlog(newBlog).subscribe(data => this.blogs.push(newBlog));
 
-      // Recall Blogs to sync
-
-      //this._blogservice.getBlogs().subscribe(data => this.blogs = data);
-
-      this._router.navigate(["/blog"]);
-
-      window.location.reload();
+      this._router.navigate(["/blog"]).then(() => {
+        window.location.reload();
+      });
 
     }
 

@@ -46,7 +46,9 @@
       </div>
     </div>
     <button class="btn btn-primary" [disabled]="blogForm.invalid" type="submit">{{buttonText}}</button>
-    <button class="btn btn-danger float-right" type="button" (click)="deleteCall(blog.id)">Delete</button>
+    <div *ngIf="blog.id != null">
+      <button class="btn btn-danger float-right" type="button" (click)="deleteCall(blog.id)">Delete</button>
+    </div>
   </form>
   <br />
 </div>

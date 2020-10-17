@@ -13,11 +13,13 @@
   </div>
 </header>
 <!--CategoryFilter-->
-<categoryfilter *ngIf="blogs" [All]="getAll()"
-                [Technology]="getTechno()"
-                [Software]="getSoftware()"
-                [Hardware]="getHardware()"
-                (OptionChanged)="OnOptionChanged($event)"></categoryfilter>
+<div class="container mb-5" style="text-align:center; font-size:120%;">
+  <categoryfilter *ngIf="blogs" [All]="getAll()"
+                  [Technology]="getTechno()"
+                  [Software]="getSoftware()"
+                  [Hardware]="getHardware()"
+                  (OptionChanged)="OnOptionChanged($event)"></categoryfilter>
+</div>
 <!--BLogsList-->
 <div  class="container">
   <div class="row">
