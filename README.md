@@ -8,4 +8,4 @@
 
 Note: To Create a new Blog go to --> blog/form
 
-Note: To Edit/Delete Blog go to --> blog/edit/(blogId) or simply click on the blog then chose Edit
+Note: To Edit/Delete Blog go to --> blog/edit/(blogId) or simply click on the blog then choose Edit
